@@ -11,8 +11,8 @@ $(function(){
         var w=Number($width.val()),
             h=Number($height.val());
         //calculate
-        var p=1*(w+h)
-            ,a=w*h;
+        var p=Math.round(2*(w+h)*Math.pow(10,3))/Math.pow(10,3)
+            ,a=Math.round(w*h*Math.pow(10,3))/Math.pow(10,3);
         //output
         $perimeter.val(p),
         $area.val(a);

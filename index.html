@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="rectangle.css">
     <!-- <link ref="styleness" href="./rectangle.css"> -->
-    <style>
+    <!-- <style>
         div{
             width:170px;
             margin: 50px auto;
@@ -20,23 +21,23 @@
             padding-left: 5px;
             font-size: 1em;
         }
-    </style>
+    </style> -->
 </head>
 <body>
     <div>
         <label>宽度:</label>
-        <input id="width" type="text">
+        <input id="width" type="text" autofocus>
         <br/>
         <label>高度:</label>
-        <input id="height" type="text">
+        <input id="height" type="text" autofocus>
         <br>
         <input type="button" id="calculate" value="计算">
         <br>
         <label>周长:</label>
-        <input id="perimeter" type="text">
+        <input id="perimeter" type="text" disabled>
         <br>
         <label>面积:</label>
-        <input id="area" type="text">
+        <input id="area" type="text" disabled>
     </div>
     <script src="./jquery.min.js"></script>
     <script src="./rectangle.js"></script>
